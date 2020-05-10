@@ -1,19 +1,15 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # -*- coding: UTF-8 -*-
 # 九九乘法表
 
+print("\n99乘法表")
 i = 1
-while i:
+while i <= 9:
+    # 里面一层循环控制每一行中的列数
     j = 1
-    while j:
-        print(j, "*", i, " = ", i * j, '  ')
-        if i == j:
-            break
+    while j <= i:
+        mut = j * i
+        print("%d*%d=%d" % (j, i, mut), end="  ")
         j += 1
-        if j >= 10:
-            break
-
-    print("\n")
+    print("")
     i += 1
-    if i >= 10:
-        break
