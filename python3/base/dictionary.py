@@ -1,17 +1,12 @@
-#!/usr/bin/env Python
-'#!/usr/bin/python'
-#coding=utf-8
-'''
-Created on 2017年12月23日
+#!/usr/bin/python3
+# coding=utf-8
 
-@author: xingjiang.li
-'''
-
-'''
+"""
 字典(dictionary)是除列表以外python之中最灵活的内置数据结构类型。列表是有序的对象集合，字典是无序的对象集合。
 两者之间的区别在于：字典当中的元素是通过键来存取的，而不是通过偏移存取。
 字典用"{ }"标识。字典由索引(key)和它对应的值value组成。
-'''
+"""
+
 dict1 = {}
 dict1['one'] = "This is one"
 dict1[2] = "This is two"
@@ -24,7 +19,7 @@ print(dict2)  # 输出完整的字典
 print(dict2.keys())  # 输出所有键
 print(dict2.values())  # 输出所有值
 
-#dictionary 字典相当于 java中的Map
+# dictionary 字典相当于 java中的Map
 
 # list = [dict,tinydict]
 # print(list[0].keys())
@@ -43,7 +38,7 @@ print("dict['Age']: ", dict['Age']);
 键必须不可变，所以可以用数字，字符串或元组充当，所以用列表就不行
 '''
 # dict = {['Name']: 'Zara', 'Age': 7};
-dict = {('Name'): 'Zara', 'Age': 7}; #元组可以作为key
+dict = {('Name'): 'Zara', 'Age': 7};  # 元组可以作为key
 
 print("dict['Name']: ", dict['Name']);
 
@@ -51,9 +46,9 @@ dict_copy = dict.copy()
 
 print(dict_copy is dict)
 
-d={}
+d = {}
 dict.update(d)
 print(dict)
 print(d)
 
-print(dict.popitem()) #随机返回并删除字典中的一对键和值
+print(dict.popitem())  # 随机返回并删除字典中的一对键和值

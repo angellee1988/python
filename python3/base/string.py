@@ -1,11 +1,5 @@
-#!/usr/bin/env Python
-'#!/usr/bin/python'
-#coding=utf-8
-'''
-Created on 2017年12月23日
-
-@author:xingjiang.li
-'''
+#!/usr/bin/python3
+# coding=utf-8
 
 str = 'Hello World!'
 
@@ -21,7 +15,7 @@ print('\\')
 print("r\n")
 print("Bye!")
 
-print("My name is %s and weight is %d kg!"%('Zara', 21))
+print("My name is %s and weight is %d kg!" % ('Zara', 21))
 
 str = '''
 hello python!
@@ -41,6 +35,6 @@ print("abcd".islower())
 
 print("Rtyui".upper())
 
-print("sgjkjll".title()) #返回"标题化"的 string,就是说所有单词都是以大写开始
+print("sgjkjll".title())  # 返回"标题化"的 string,就是说所有单词都是以大写开始
 
 print("Sgjkjll".istitle())

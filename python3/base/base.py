@@ -1,12 +1,7 @@
-#!/usr/bin/env Python
-'#!/usr/bin/python'
-#coding=utf-8
-'''
-Created on 2017年12月23日
+#!/usr/bin/python3
+# coding=utf-8
 
-@author: xingjiang.li
-'''
-print("hello,world!")  #注释
+print("hello,world!")  # 注释
 
 days = ['Monday', 'Tuesday', 'Wednesday',
         'Thursday', 'Friday']
@@ -17,25 +12,28 @@ print(days)
 这是多行注释
 """
 
-totalStr = "hello " +\
-        "world"
+totalStr = "hello " + \
+           "world"
 
 print(totalStr)
 
-import sys; x = 'runoob'; sys.stdout.write(x + '\n')
+import sys;
 
-x="a"
-y="b"
+x = 'runoob';
+sys.stdout.write(x + '\n')
+
+x = "a"
+y = "b"
 # 换行输出
 print(x)
 print(y)
 
 print('---------')
 # 不换行输出
-print(x),print(y),
+print(x), print(y),
 
 # 不换行输出
-print(x,y)
+print(x, y)
 
 # Python支持四种不同的数字类型：
 # int（有符号整型）

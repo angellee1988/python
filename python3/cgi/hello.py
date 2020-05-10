@@ -1,12 +1,8 @@
-#!/usr/bin/env Python
-'#!/usr/bin/python'
-#coding=utf-8
-'''
-@author: xingjiang.li
-'''
+#!/usr/bin/python3
+
 
 print("Content-type:text/html")
-print                               # 空行，告诉服务器结束头部
+print  # 空行，告诉服务器结束头部
 print('<html>')
 print('<head>')
 print('<meta charset="utf-8">')

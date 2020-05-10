@@ -1,9 +1,6 @@
-#!/usr/bin/env Python
-'#!/usr/bin/python'
+#!/usr/bin/python3
 # coding=utf-8
-'''
-@author: xingjiang.li
-'''
+
 
 '''
 Python内置类属性

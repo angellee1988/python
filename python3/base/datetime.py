@@ -1,10 +1,6 @@
-#!/usr/bin/env Python
-'#!/usr/bin/python'
-#coding=utf-8
-'''
-Created on 2017年12月23日
-@author: xingjiang.li
-'''
+#!/usr/bin/python3
+# coding=utf-8
+
 
 import time;  # 引入time模块
 
@@ -14,13 +10,12 @@ print("当前时间戳为:", ticks)
 localtime = time.localtime(time.time())
 print("本地时间为 :", localtime)
 
-#格式化时间
-localtime = time.asctime( time.localtime(time.time()) )
+# 格式化时间
+localtime = time.asctime(time.localtime(time.time()))
 print("本地时间为 :", localtime)
 
 # 格式化成2016-03-20 11:45:39形式
 print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
-
 
 # 格式化成Sat Mar 28 22:24:24 2016形式
 print(time.strftime("%a %b %d %H:%M:%S %Y", time.localtime()))
