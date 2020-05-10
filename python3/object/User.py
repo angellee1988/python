@@ -1,6 +1,6 @@
 #!/usr/bin/env Python
 '#!/usr/bin/python'
-#coding=utf-8
+# coding=utf-8
 '''
 @author: xingjiang.li
 '''
@@ -18,32 +18,36 @@ __bases__ : 类的所有父类构成元素（包含了一个由所有父类组�
 self 代表类的实例，self 在定义类的方法时是必须有的，虽然在调用时不必传入相应的参数。
 '''
 
+
 class User:
     '用户信息'
     userName = ''
     password = ''
     age = 0
 
-    #__init__()方法是一种特殊的方法，被称为类的构造函数或初始化方法，当创建了这个类的实例时就会调用该方法
-    def __init__(self,userName,password,age):
+    # __init__()方法是一种特殊的方法，被称为类的构造函数或初始化方法，当创建了这个类的实例时就会调用该方法
+    def __init__(self, userName, password, age):
         self.userName = userName
         self.password = password
         self.age = age
+
     '打印用户信息'
+
     def showUser(self):
-        print("userName:",self.userName)
-        print("age:",self.age)
-    #析构函数 __del__ ，__del__在对象销毁的时候被调用，当对象不再被使用时，__del__方法运行
+        print("userName:", self.userName)
+        print("age:", self.age)
+
+    # 析构函数 __del__ ，__del__在对象销毁的时候被调用，当对象不再被使用时，__del__方法运行
     def __del__(self):
         class_name = self.__class__.__name__
         print(class_name, "销毁")
 
-user = User('小明','123456',23)
+
+user = User('小明', '123456', 23)
 user.showUser()
 
 print(User.__dict__)
 print(User.__doc__)
-
 
 '''
 python对象销毁(垃圾回收)

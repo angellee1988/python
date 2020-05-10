@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 
 class Employee:
-    '所有员工的基类'
+    """所有员工的基类"""
     empCount = 0
     age = 0
 
@@ -17,7 +17,8 @@ class Employee:
     def displayEmployee(self):
         print("Name : ", self.name, ", Salary: ", self.salary)
 
-emp = Employee("xxx",20000)
+
+emp = Employee("xxx", 20000)
 emp.displayEmployee()
 print(emp.empCount)
 
@@ -36,12 +37,12 @@ hasattr(obj,name) : 检查是否存在一个属性。
 setattr(obj,name,value) : 设置一个属性。如果属性不存在，会创建一个新属性。
 delattr(obj, name) : 删除属性。
 '''
-hasattr(emp1, 'age')    # 如果存在 'age' 属性返回 True。
-getattr(emp1, 'age')    # 返回 'age' 属性的值
-setattr(emp1, 'age', 8) # 添加属性 'age' 值为 8
-delattr(emp1, 'age')    # 删除属性 'age'
+hasattr(emp1, 'age')  # 如果存在 'age' 属性返回 True。
+getattr(emp1, 'age')  # 返回 'age' 属性的值
+setattr(emp1, 'age', 8)  # 添加属性 'age' 值为 8
+delattr(emp1, 'age')  # 删除属性 'age'
 
-#Python内置类属性
+# Python内置类属性
 print("Employee.__doc__:", Employee.__doc__)
 print("Employee.__name__:", Employee.__name__)
 print("Employee.__module__:", Employee.__module__)
