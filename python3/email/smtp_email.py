@@ -6,11 +6,11 @@ from email.header import Header
 
 # 第三方 SMTP 服务
 mail_host = "smtp.qq.com"  # 设置服务器
-mail_user = "angellee1988@qq.com"  # 用户名
+mail_user = "xxx@xx.com"  # 用户名
 mail_pass = "xxxxx"  # 口令
 
-sender = 'angellee1988@qq.com'
-receivers = ['angellee1988@163.com']  # 接收邮件，可设置为你的QQ邮箱或者其他邮箱
+sender = 'xxx@xx.com'
+receivers = ['xxx@xx.com']  # 接收邮件，可设置为你的QQ邮箱或者其他邮箱
 
 # 三个参数：第一个为文本内容，第二个 plain 设置文本格式，第三个 utf-8 设置编码
 message = MIMEText('Python 邮件发送测试...', 'plain', 'utf-8')
